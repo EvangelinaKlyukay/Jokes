@@ -3,29 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A6DCC9E925B8118A003A0594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCC9E825B8118A003A0594 /* AppDelegate.swift */; };
 		A6DCC9EB25B8118A003A0594 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCC9EA25B8118A003A0594 /* SceneDelegate.swift */; };
-		A6DCC9ED25B8118A003A0594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCC9EC25B8118A003A0594 /* ViewController.swift */; };
+		A6DCC9ED25B8118A003A0594 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCC9EC25B8118A003A0594 /* JokesViewController.swift */; };
 		A6DCC9F025B8118A003A0594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DCC9EE25B8118A003A0594 /* Main.storyboard */; };
 		A6DCC9F225B8118D003A0594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DCC9F125B8118D003A0594 /* Assets.xcassets */; };
 		A6DCC9F525B8118D003A0594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DCC9F325B8118D003A0594 /* LaunchScreen.storyboard */; };
-		A6DCCA0625B860A4003A0594 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA0525B860A4003A0594 /* Jokes.swift */; };
+		A6DCCA0625B860A4003A0594 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA0525B860A4003A0594 /* Joke.swift */; };
+		A6DCCA0B25B86622003A0594 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA0A25B86622003A0594 /* NetworkManager.swift */; };
+		A6DCCA0F25B8685D003A0594 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A6DCCA0E25B8685D003A0594 /* Alamofire */; };
+		A6DCCA1225B97F13003A0594 /* JokesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA1125B97F13003A0594 /* JokesTableViewCell.swift */; };
+		A6DCCA2C25B9BC6A003A0594 /* WKVebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA2B25B9BC6A003A0594 /* WKVebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6DCC9E525B8118A003A0594 /* Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DCC9E825B8118A003A0594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6DCC9EA25B8118A003A0594 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6DCC9EC25B8118A003A0594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6DCC9EC25B8118A003A0594 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		A6DCC9EF25B8118A003A0594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6DCC9F125B8118D003A0594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6DCC9F425B8118D003A0594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6DCC9F625B8118D003A0594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6DCCA0525B860A4003A0594 /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
+		A6DCCA0525B860A4003A0594 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		A6DCCA0A25B86622003A0594 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A6DCCA1125B97F13003A0594 /* JokesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesTableViewCell.swift; sourceTree = "<group>"; };
+		A6DCCA2B25B9BC6A003A0594 /* WKVebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKVebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6DCCA0F25B8685D003A0594 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 				A6DCCA0325B85FC0003A0594 /* Model */,
 				A6DCCA0425B85FD4003A0594 /* View */,
 				A6DCCA0225B85F2D003A0594 /* Controller */,
+				A6DCCA0925B86605003A0594 /* Network */,
 				A6DCC9F125B8118D003A0594 /* Assets.xcassets */,
 				A6DCC9F325B8118D003A0594 /* LaunchScreen.storyboard */,
 				A6DCC9F625B8118D003A0594 /* Info.plist */,
@@ -73,7 +82,9 @@
 		A6DCCA0225B85F2D003A0594 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A6DCC9EC25B8118A003A0594 /* ViewController.swift */,
+				A6DCC9EC25B8118A003A0594 /* JokesViewController.swift */,
+				A6DCCA1125B97F13003A0594 /* JokesTableViewCell.swift */,
+				A6DCCA2B25B9BC6A003A0594 /* WKVebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -81,7 +92,8 @@
 		A6DCCA0325B85FC0003A0594 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A6DCCA0525B860A4003A0594 /* Jokes.swift */,
+				A6DCCA0525B860A4003A0594 /* Joke.swift */,
+				A6DCCA0A25B86622003A0594 /* NetworkManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +104,13 @@
 				A6DCC9EE25B8118A003A0594 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A6DCCA0925B86605003A0594 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +129,9 @@
 			dependencies = (
 			);
 			name = Jokes;
+			packageProductDependencies = (
+				A6DCCA0E25B8685D003A0594 /* Alamofire */,
+			);
 			productName = Jokes;
 			productReference = A6DCC9E525B8118A003A0594 /* Jokes.app */;
 			productType = "com.apple.product-type.application";
@@ -137,6 +159,9 @@
 				Base,
 			);
 			mainGroup = A6DCC9DC25B8118A003A0594;
+			packageReferences = (
+				A6DCCA0D25B8685D003A0594 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A6DCC9E625B8118A003A0594 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,9 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DCC9ED25B8118A003A0594 /* ViewController.swift in Sources */,
+				A6DCCA2C25B9BC6A003A0594 /* WKVebViewController.swift in Sources */,
+				A6DCC9ED25B8118A003A0594 /* JokesViewController.swift in Sources */,
 				A6DCC9E925B8118A003A0594 /* AppDelegate.swift in Sources */,
-				A6DCCA0625B860A4003A0594 /* Jokes.swift in Sources */,
+				A6DCCA1225B97F13003A0594 /* JokesTableViewCell.swift in Sources */,
+				A6DCCA0B25B86622003A0594 /* NetworkManager.swift in Sources */,
+				A6DCCA0625B860A4003A0594 /* Joke.swift in Sources */,
 				A6DCC9EB25B8118A003A0594 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6DCCA0D25B8685D003A0594 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6DCCA0E25B8685D003A0594 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6DCCA0D25B8685D003A0594 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6DCC9DD25B8118A003A0594 /* Project object */;
 }
