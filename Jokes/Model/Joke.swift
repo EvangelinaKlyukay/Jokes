@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct Joke: Codable {
-    let id: Int?
-    let joke: String?
-
+class Joke: NSObject {
+    
+    let id: String
+    let text: String
+    
+    init(data: [String: Any]) {
+        self.id = data["id"] as? String ?? ""
+        self.text = data["joke"] as? String ?? ""
+    }
 }
-

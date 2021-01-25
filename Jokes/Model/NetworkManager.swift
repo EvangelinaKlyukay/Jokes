@@ -10,30 +10,22 @@ import Alamofire
 
 class NetworkManager {
     
-    func getJokes(count: Int, completion: @escaping ([Joke]?) -> Void) {
+    func getJokes(count: Int, completion: @escaping ([Joke]) -> Void, onFail: ((Error) -> Void)?) {
         
         AF.request("http://api.icndb.com/jokes/random/\(count)?firstName=Chuck&lastName=Norris").responseJSON { response in
-            guard let json = response.result as? [String: AnyObject], let jokesRawData = json["value"] as? [[String: AnyObject]] else {
-                switch response.result {
-                                case .success:
-                                    
-                                case .failure(let error):
-                                    print(error)
-                                }
-
-                completion(nil)
-                return
-            }
-
-            var jokes: [Joke] = []
-            for rawJoke in jokesRawData {
-                let joke = Joke(data: rawJoke)
-                jokes.append(joke)
-            }
-            completion(jokes)
-            
-            if let error = response.error {
+            switch response.result {
+            case .success(let data):
+                guard let json = data as? [String: Any], let values = json["value"] as? [[String: Any]] else {
+                    print("Unable to parse response")
+                    return
+                }
+                
+                let jokes = values.map({ Joke(data: $0) })
+                completion(jokes)
+                
+            case .failure(let error):
                 print(error.localizedDescription)
+                onFail?(error)
             }
         }
     }
