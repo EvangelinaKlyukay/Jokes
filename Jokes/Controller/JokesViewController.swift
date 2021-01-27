@@ -29,7 +29,6 @@ class JokesViewController: UIViewController, UITableViewDelegate, UITableViewDat
             name: UIResponder.keyboardWillChangeFrameNotification,
             object: nil
         )
-
     }
     
     @IBAction func loadButton(_ sender: Any) {
@@ -74,19 +73,18 @@ class JokesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         UIView.animate(withDuration: nsDuration.doubleValue, animations: self.view.layoutIfNeeded)
     }
-
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return jokes.count
     }
     
-   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JokesCell", for: indexPath)
         (cell as? JokesTableViewCell)?.joke = jokes[indexPath.row]
         return cell
     }
     
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

@@ -17,7 +17,7 @@
 		A6DCCA0B25B86622003A0594 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA0A25B86622003A0594 /* NetworkManager.swift */; };
 		A6DCCA0F25B8685D003A0594 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A6DCCA0E25B8685D003A0594 /* Alamofire */; };
 		A6DCCA1225B97F13003A0594 /* JokesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA1125B97F13003A0594 /* JokesTableViewCell.swift */; };
-		A6DCCA2C25B9BC6A003A0594 /* WKVebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA2B25B9BC6A003A0594 /* WKVebViewController.swift */; };
+		A6DCCA2C25B9BC6A003A0594 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCA2B25B9BC6A003A0594 /* WKWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		A6DCCA0525B860A4003A0594 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		A6DCCA0A25B86622003A0594 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A6DCCA1125B97F13003A0594 /* JokesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesTableViewCell.swift; sourceTree = "<group>"; };
-		A6DCCA2B25B9BC6A003A0594 /* WKVebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKVebViewController.swift; sourceTree = "<group>"; };
+		A6DCCA2B25B9BC6A003A0594 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,6 @@
 				A6DCCA0325B85FC0003A0594 /* Model */,
 				A6DCCA0425B85FD4003A0594 /* View */,
 				A6DCCA0225B85F2D003A0594 /* Controller */,
-				A6DCCA0925B86605003A0594 /* Network */,
 				A6DCC9F125B8118D003A0594 /* Assets.xcassets */,
 				A6DCC9F325B8118D003A0594 /* LaunchScreen.storyboard */,
 				A6DCC9F625B8118D003A0594 /* Info.plist */,
@@ -84,7 +83,7 @@
 			children = (
 				A6DCC9EC25B8118A003A0594 /* JokesViewController.swift */,
 				A6DCCA1125B97F13003A0594 /* JokesTableViewCell.swift */,
-				A6DCCA2B25B9BC6A003A0594 /* WKVebViewController.swift */,
+				A6DCCA2B25B9BC6A003A0594 /* WKWebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,13 +103,6 @@
 				A6DCC9EE25B8118A003A0594 /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A6DCCA0925B86605003A0594 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DCCA2C25B9BC6A003A0594 /* WKVebViewController.swift in Sources */,
+				A6DCCA2C25B9BC6A003A0594 /* WKWebViewController.swift in Sources */,
 				A6DCC9ED25B8118A003A0594 /* JokesViewController.swift in Sources */,
 				A6DCC9E925B8118A003A0594 /* AppDelegate.swift in Sources */,
 				A6DCCA1225B97F13003A0594 /* JokesTableViewCell.swift in Sources */,

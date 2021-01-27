@@ -1,5 +1,5 @@
 //
-//  WKVebViewController.swift
+//  WKWebViewController.swift
 //  Jokes
 //
 //  Created by Евангелина Клюкай on 21.01.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import WebKit
 
-class WKVebViewController: UIViewController {
+class WKWebViewController: UIViewController {
     
     private var webView: WKWebView?
 
